@@ -1,0 +1,83 @@
+@charset 'utf-8';
+body{margin: 0;   font-family: HelveticaNeue-Light,AppleSDGothicNeo-Light,sans-serif; font-size: 0.9em;color: #999; line-height: 1.2em;}
+  #wrapper {}
+.motion-cont{ }
+.bot-wrap{}
+
+button{cursor: pointer;}
+ol, ul, menu { list-style: none; }
+.icoTitle{background: url(../images/ico_title_m.png) no-repeat; height:20px;width:72px; display: inline-block;top: 15px; left: 37%; position: absolute; }         
+/*.btnClose{background: url(../images/ico_close.png) no-repeat;  width:14px;height:14px;display: inline-block;top: 17px; right: 10%;
+ position: absolute;  }*/    
+.btnMenu{background: url(../images/ico_mMenu.png) no-repeat; background-size: 100%; width:25px;height:25px;display: inline-block;top:11px;left:15px;position: relative;cursor: pointer;} 
+.icoShaka{background: url(../images/ico_shaka.png) no-repeat; background-size: 100%; width:25px;height:25px;display: inline-block;top: 10px;left:27px;position: relative; cursor: pointer;} 
+
+.btnClose{background: url("https://bottest.hyundai.com/assets/images/01_title_close_btn@1x.png") no-repeat;  width:14px;height:14px;display: inline-block;top: 16px; right: 5%;
+ position: absolute;  }
+.chatTitle{background: url("https://bottest.hyundai.com/assets/images/title_icn_text_Final2.png") no-repeat; height:18px;width:85px; display: inline-block;top: 0; left: 0; right: 0; bottom: 0; margin: auto; position: absolute; }
+.chatVersion{background: url("https://bottest.hyundai.com/assets/images/beta_icn_US_38x17.png") no-repeat; height:18px;width:38px; display: inline-block;top: 0; left: 130px; right: 0; bottom: 0; margin: auto; position: absolute; }
+.chatRecommend{background: url("https://bottest.hyundai.com/assets/images/03_chat_recommend_btn3.png") no-repeat; background-size: 100%; width:40px;height:25px;display: inline-block;top: 13px;left:19px;position: relative; cursor: pointer;} 
+.chatRecommendAction{background: url("https://bottest.hyundai.com/assets/images/03_chat_recommend_btn4.png") no-repeat; background-size: 100%; width:40px;height:25px;display: inline-block;top: 13px;left:19px;position: relative; cursor: pointer;} 
+.hamburgerBtn{background: url("https://bottest.hyundai.com/assets/images/03_chat_menu_btn_OV@1x.png") no-repeat; background-size: 100%; width:25px;height:25px;display: inline-block;top: 12px;left:4%;position: relative; cursor: pointer;}
+.hamburgerBtnAction{background: url("https://bottest.hyundai.com/assets/images/03_chat_menu_btn_OUT@1x.png") no-repeat; background-size: 100%; width:25px;height:25px;display: inline-block;top: 12px;left:4%;position: relative; cursor: pointer;}
+
+.wc-message-content.inBox{background: transparent;padding: 0; width: 100%;}
+.wc-card > P >i{background: url(../images/ico_360.png) no-repeat; background-size: 100%; width:50px;height:50px;position: absolute;left: 37%; top: 18%}
+.wc-list{width:258px;}
+.wc-message-from-bot .wc-message-content{width: inherit !important;}
+
+.imgBox{width:100%;}
+.imgBox img{width:100%;}
+.btnPopRight{background: url(../images/ico_popup_right.png) no-repeat; background-size: 100%; width:21px;height:36px;display: inline-block;top:43%;right:0px;position: absolute; z-index: 9} 
+
+.menuBox{width:100%;display:none;position: fixed;left:0px; bottom: 50px;z-index: 99;}
+.menuInner > ul{display: inline-block;margin: 0;padding: 0; width: 100%;}
+.menuInner > ul > li{border-bottom:1px solid #f0f1f4;width: 100%;height: 46px;cursor: pointer;}
+.menuInner > ul > li > span{font-size:13px;color:#00aad2;line-height:15px;padding: 11px 13px 7px; display: inline-block;}
+.menuInner a{font-size:13px;color:#00aad2;text-decoration: none;}
+.menuInner > p{width:100%;text-align:center;margin: 0;}
+.menuInner > p > span{color:#333333;padding-top: 8px;    display: inline-block;}
+.menuInner{width: 100%;background:#ffffff;border-top: 1px #d7dade solid;}
+.indexIcon{background: url(../images/ico_index.png) no-repeat; width:19px;height:20px;position: absolute;bottom: -3px;left: 16px;}
+.depthMenu{background: url(../images/ico_menu_index.png) no-repeat;background-position: 90% center;}
+.depthMenuLink{background: url(../images/ico_menu_index2.png) no-repeat;background-position: 10% center; cursor: pointer;}
+.menuBoxDepth{width:100%;display:none;position: fixed;bottom: 50px;left: 0;z-index: 99;}
+
+.wc-message-from{display: none;}
+/*.popupArea{opacity:0;position: absolute;left:0px;bottom: -100px; width:378px;height:480px; z-index: 999999;  background: #FFF;    border-radius: 18px 18px 0 0;}*/
+/*.popupArea{opacity:0;position: absolute;left:0px;bottom: 90px; width:570px;height:352px; z-index: 999999;  background: #FFF;    border-radius: 18px 18px 0 0;}*/
+.popupArea{opacity:0;position: absolute;bottom: 0; width:100%;height:70%; z-index: 999999; border-radius: 18px 18px 0 0;}
+.popupArea.popColor{background:#fbfbfb;}
+
+.popHeader{background: #FFF;height: 33px;width: 100%; position: relative;border-radius:18px 18px 0 0; border-bottom: 1px #ccc solid; text-align: center;}
+.popHeader > span{font-size: 14px;    color: #333;    font-weight: bold;    padding:9px 12px 0px;    display: inline-block;}
+.popHeader > .popUpload{background: url(../images/ico_popup_upload_m.png) no-repeat; width:22px;height:22px;position: absolute; left: 4%;top: 7px;}
+.popHeader > .popClose{background: url(../images/ico_popup_close_m.png) no-repeat; width:22px;height:22px;position: absolute; right: 4%;top: 7px;}
+.popHeader > button{background: url(../images/ico_popup_close_m.png) no-repeat; width:22px;height:22px;position: absolute; right: 4%;top: 7px;}
+.popBody{position: relative;border-top:1px solid rgba(0,0,0,0.20);}
+.popTxt{text-align: center;    position: absolute;    bottom:11px; width: 100%; }
+.popTxt > span{background-color:#bcbcbc; color: #FFF; border-radius: 5px; padding:4px 10px 5px;}
+.popMask{background-color: #000; opacity: 0.5; height: 100%; width: 100%; z-index: 999; position: absolute; top:0; left: 0;}
+
+
+.linkTest{color: #CCC; padding:10px; cursor: pointer;    position: absolute;    top: 10px;    left: 10px;}
+.wc-carousel-360 > div, .wx-carousel-map > div, .wc-carousel-play > div, .wc-carousel-image > div{cursor: pointer;}
+.wc-message-group-content{margin-top: 0px !important;}
+
+.aaa{position: absolute;top:30px; z-index: 99999}
+
+/*20170622 KSO*/	/*지도 이미지 생기면 추가해야함*/
+.imgContainer {position: relative;width: 100%;}
+.turnImg {  background: url(../images/ico_360_50.png);  width:50px;height:50px;transition: .5s ease;  opacity: 0;  position: absolute;  top: 50%;  left: 50%;  transform: translate(-50%, -50%);  -ms-transform: translate(-50%, -50%)}
+.playImg {  background: url(../images/ico_play_50.png);  width:50px;height:50px;transition: .5s ease;  opacity: 0;  position: absolute;  top: 50%;  left: 50%;  transform: translate(-50%, -50%);  -ms-transform: translate(-50%, -50%)}
+.mapImg {  background: url("https://bottest.hyundai.com/assets/images/m_btn_maximazing_blue_50.png");  width:50px;height:50px;transition: .5s ease;  opacity: 0;  position: absolute;  top: 50%;  left: 50%;  transform: translate(-50%, -50%);  -ms-transform: translate(-50%, -50%)}
+.imgImg {  background: url(../images/d_icn_img.png);  width:34px;height:34px;transition: .5s ease;  opacity: 0;  position: absolute;  top: 75%;  left: 85%;  transform: translate(-50%, -50%);  -ms-transform: translate(-50%, -50%)}
+
+.imgContainer .turnImg {  opacity: 1;}
+.imgContainer .playImg {  opacity: 1;}
+.imgContainer .mapImg {  opacity: 1;}
+.imgContainer .imgImg {  opacity: 1;}
+
+.textMent{background:#fff; border-radius:12px; padding:10px; font-size:14px;}
+.timeStampBot{font-size:9px !important; color:gray !important; line-height:15px; text-align:left; /*margin-left:42px !important;*/ background:#f1f3f6 !important; padding:0  !important}
+.timeStampUser{font-size:9px; color:gray; line-height:15px; text-align:right;}

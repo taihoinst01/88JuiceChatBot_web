@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+        <meta name="viewport" content="width=380" />
+
+        <link rel="stylesheet" href="assets/css/botchat.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="stylesheet" href="assets/css/bootstrap_v1.css" />
+		<!--<link rel="stylesheet" href="assets/css/bootstrap.css" />-->
+		<link rel="stylesheet" href="assets/css/HyundaiSansTextKRRegular.css" />
+        <!--<link rel="stylesheet" href="assets/css/m-botchat.css"/>-->
+        <!--<link rel="stylesheet" href="assets/css/m-style.css"/>-->
+        <style type="text/css">
+            #navi-header-wrap{position: relative; width:100%; z-index: 10; margin: auto;max-width: 930px; height: 919px;}
+            .banner{position: absolute;top: 245px; left: 20px;}
+            .banner > p{display: inline-block; height:33px; width:110%; border-radius: 21px;background-color: #01aad3; margin:0px !important; padding: 0px; text-align:center;}
+            .banner > p > a > span{display: inline;    position: relative; top: 5px; left:2px;}
+            .banner > p > a > span > img{height: 16px; margin:2px;}
+            .sample{background:url("https://bottest.hyundai.com/assets/images/sample-pc1.jpg") no-repeat; background-position: 50% 0; width: 100%; height: 100%;}
+        </style>
+		<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v2/maps.js?clientId=Y536Z1ZMNv93Oej6TrkF"></script>
+        <!--<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v2/maps.js?clientId=dXUekyWEBhyYa2zD2s33"></script>--> <!-- 장책임님꺼 -->
+		<!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6Gkhxa7U1c3PIoiqNBSr2d19Z2a4A4tI" async="" defer=""></script>-->
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!--<script type="text/javascript" src="assets/js/jquery.min.js"></script>-->
+        <script type="text/javascript" src="assets/js/jquery.reel-min.js"></script>
+		<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+        <script type="text/javascript" src="assets/js/operation.js"></script>
+		<script type="text/javascript" src="assets/js/ui.js"></script>
+       
+		<script type="text/javascript">
+			
+        </script>
+    </head>
+  <body>
+<input type="hidden" id="conversationId" />
+    <div id="wrapper" class="sample">
+        <div id="navi-header-wrap">
+            <div class="banner">
+                <p>
+                    <a id="botChatBtn" href="javascript:void(0);"><span class="ico_char"><img src="assets/images/typeB_m_ani.gif"></span><span class="ico_txt"><img src="https://bottest.hyundai.com/assets/images/Main_chat_btn_Final2.png" style="padding-right:2px;"></span>
+					<span style="top:6px;"><img src="https://bottest.hyundai.com/assets/images/beta_icn_US_34x15.png"></span></a>
+					
+                </p>
+				
+            </div>
+        </div>
+    </div>         
+      <!-- 여기서 부터 -->
+      <div class="bot-wrap">
+          <div id="bot" />
+          <script src="assets/js/botchat.js"></script>
+		  <script src="assets/js/directLine.js"></script>
+          <!--<script>
+				  BotChat.App({
+					 directLine: { secret: 'PXLLcE9MLGc.cwA.eME.YYIRumxHwnqmuaaYJz762Jkol6ALUe7nThgkMOb_8bE' }, //onpremis hyundai
+				     //directLine: { secret: 'VvL1saGXIWY.cwA.rcg.E8K7RyD7MbSwqBBNHBAxic-SC_unVCTqFfqkxZ_D6Wc' }, //onpremis hyundai
+				     //directLine: { secret: 'g1-wUK1BHJ8.cwA.hJM.C2hxJgvoj50OaqqF_ZW4B44A4jrr1Lbrm92qt9z4c4g' }, // smartsend
+
+					user: { id: 'userid' },
+					bot: { id: 'botid' },
+					resize: 'detect'
+				  }, document.getElementById("bot"));
+          </script>-->
+          <div class="menuBox">
+              <div class="menuInner">
+				<P><span>메뉴</span></P>
+				<ul>
+					<li><span><a href="#" onclick="viewMenu('Kona의 주요특징')">Kona의 특별함</a></span></li>
+					<li><span><a href="#" onclick="viewMenu('나에게 맞는 모델을 추천해줘')">나에게 맞는 모델 추천</a></span></li>
+					<li><span><a href="#" onclick="viewMenu('견적 내기')">Kona의 가격 보기</a></span></li>
+					<li><span><a href="#" onclick="viewMenu('시승신청')">Feel Good! 시승신청</a></span></li>
+				</ul>
+				<div class="indexIcon"></div>
+              </div>
+          </div>
+
+          <!-- Popup VR -->
+          <div class="vr-wrapper popupArea">
+              <div class="popHeader">
+                  <span id="vrTitle">팬덤블랙</span>
+                  <button class="btnTopClose"></button>
+              </div>
+              <div id="vrArea" class="popBody">
+					<button class="btnPopRight"></button>
+					<div class="imgBox" id="phantom black">
+						<img src='https://bottest.hyundai.com/assets/images/price/360/phantom black/00001.jpg' alt='' class='reel' id='image' data-images='https://bottest.hyundai.com/assets/images/price/360/phantom black/000##.jpg' data-frames='60' data-cw='true' />
+					</div>
+					<div class="popTxt">
+                      <span>좌우로 드래그하여 돌려보세요.</span>
+					</div>
+              </div>
+			  <script>
+				//var carPath = 'https://bot.hyundai.com/assets/images/price/360/phantom black/';
+				//vrCar(carPath, 1,'jpg','image',60,'left');
+			  </script>
+          </div>
+          <!-- Popup MOV -->
+          <div class="mov-wrapper popupArea">
+              <div class="popHeader">
+                  <span id="movTitle">외관 디자인 영상 보기</span>
+                  <button class="btnTopClose"></button>
+              </div>
+              <div class="popBody">
+                  <button class="btnPopRight"></button>
+                  <div class="">
+			<iframe id="video" width="568" height="318" src="" frameborder="0" allowfullscreen></iframe>
+                  </div>
+              </div>
+          </div>
+          <!-- Popup MAP -->
+          <div class="map-wrapper popupArea">
+              <div class="popHeader">
+                  <span id="mapTitle">현대자동차 도곡중앙지점</span>
+                  <button class="btnTopClose"></button>
+              </div>
+              <div id="mapArea" class="popBody">
+                  <button class="btnPopRight"></button>
+				  <!-- v3 -->
+				  <!--<div id="map" style="position:relative; left:0; top:0;"></div>-->
+				  <!-- v2 -->
+				  <div id="map" style="border:1px solid #000;"></div>
+              </div>
+          </div>
+		  <!-- Popup IMAGE -->
+          <div class="img-wrapper popupArea">
+              <div class="popHeader">
+                  <span id="imgTitle">이미지 타이틀</span>
+				  <button class="btnTopClose"></button>
+              </div>
+              <div id="imgCarousel" class="popBody carousel slide" align="center" data-ride="carousel">
+				  <ol id='imgSlideCnt' class="carousel-indicators">
+					<li data-target="#imgCarousel" data-slide-to="0" class="active"></li>
+				  </ol>
+				  <div id='imgDiv' class="carousel-inner">
+					<div class="item active"> <img id='imgTag' src="" width="568" height="318" alt="First slide"></div>
+				  </div>
+              </div>
+          </div>
+		  <!-- Popup LifeStyle -->
+          <div class="lifestyle-wrapper popupArea">
+              <div class="popHeader">
+                  <span id="lsTitle">추천 차량 결과</span>
+                  <button class="btnPopRight"></button>
+              </div>
+              <div class="lifestyle-popBody">
+                  <div id="trim">
+					<div class="optionVR_prev">
+						<button id="optionVR_prev"></button>
+					</div>
+					<div id="slider">
+						<!--<ul></ul>-->
+						<div class="imgBox" id="phantom black">
+							<img src='https://bottest.hyundai.com/assets/images/price/360/phantom black/00001.jpg' alt='' class='reel' id='imageRecommend' data-images='https://bottest.hyundai.com/assets/images/price/360/phantom black/000##.jpg' data-frames='60' data-cw='true' />
+						</div>
+					</div>
+					<div class="optionVR_next">
+						<button id="optionVR_next"></button>
+					</div>
+					<div id="trim_info">
+						<div id="trim_infoText">
+							<p></p>
+						</div>
+					</div>
+				  </div>			  
+				  <div id="option">
+					<div id="option_url"></div>
+					<div class="option_prev">
+						<button id="optionSlide_prev"></button>
+					</div>
+					<div id="option_slider">
+						<ul></ul>
+					</div>
+					<div class="option_next">
+						<button id="optionSlide_next"></button>
+					</div>
+				  </div>
+				  <div id="option_detail"></div>
+			  </div>
+		  </div>
+
+      </div>
+      <!-- 끝 -->
+  </body>
+</html>
+
