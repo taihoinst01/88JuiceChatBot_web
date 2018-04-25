@@ -1,4 +1,4 @@
-@charset 'utf-8';
+ï»¿@charset 'utf-8';
 body{margin: 0;   font-family: HelveticaNeue-Light,AppleSDGothicNeo-Light,sans-serif; font-size: 0.9em;color: #999; line-height: 1.2em;}
   #wrapper {}
 .motion-cont{ }
@@ -66,7 +66,7 @@ ol, ul, menu { list-style: none; }
 
 .aaa{position: absolute;top:30px; z-index: 99999}
 
-/*20170622 KSO*/	/*Áöµµ ÀÌ¹ÌÁö »ý±â¸é Ãß°¡ÇØ¾ßÇÔ*/
+/*20170622 KSO*/	/*ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½ï¿½Ø¾ï¿½ï¿½ï¿½*/
 .imgContainer {position: relative;width: 100%;}
 .turnImg {  background: url(../images/ico_360_50.png);  width:50px;height:50px;transition: .5s ease;  opacity: 0;  position: absolute;  top: 50%;  left: 50%;  transform: translate(-50%, -50%);  -ms-transform: translate(-50%, -50%)}
 .playImg {  background: url(../images/ico_play_50.png);  width:50px;height:50px;transition: .5s ease;  opacity: 0;  position: absolute;  top: 50%;  left: 50%;  transform: translate(-50%, -50%);  -ms-transform: translate(-50%, -50%)}
