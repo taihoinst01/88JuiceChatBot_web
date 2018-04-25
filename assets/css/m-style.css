@@ -14,7 +14,7 @@ ol, ul, menu { list-style: none; }
 
 .btnClose{background: url("https://bottest.hyundai.com/assets/images/01_title_close_btn@1x.png") no-repeat;  width:14px;height:14px;display: inline-block;top: 16px; right: 5%;
  position: absolute;  }
-.chatTitle{background: url("") no-repeat; height:18px;width:85px; display: inline-block;top: 0; left: 0; right: 0; bottom: 0; margin: auto; position: absolute; }
+.chatTitle{background: url(../images/88juice.png) no-repeat; height:18px;width:85px; display: inline-block;top: 0; left: 0; right: 0; bottom: 0; margin: auto; position: absolute; }
 .chatVersion{background: url("https://bottest.hyundai.com/assets/images/beta_icn_US_38x17.png") no-repeat; height:18px;width:38px; display: inline-block;top: 0; left: 130px; right: 0; bottom: 0; margin: auto; position: absolute; }
 .chatRecommend{background: url("https://bottest.hyundai.com/assets/images/03_chat_recommend_btn3.png") no-repeat; background-size: 100%; width:40px;height:25px;display: inline-block;top: 13px;left:19px;position: relative; cursor: pointer;} 
 .chatRecommendAction{background: url("https://bottest.hyundai.com/assets/images/03_chat_recommend_btn4.png") no-repeat; background-size: 100%; width:40px;height:25px;display: inline-block;top: 13px;left:19px;position: relative; cursor: pointer;} 
