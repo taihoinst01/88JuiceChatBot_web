@@ -88,19 +88,19 @@ $(function () {
             $('.wc-console').animate({ 'bottom': 115 + 'px' }, 'fast');
             $('.menuBox').removeClass('off').addClass('on').css({ 'display': 'block' });
             $('.menuIcon').removeClass('menuIcon').addClass('menuIcon_active');
-            $('.sendIcon').removeClass('sendIcon').addClass('sapIcon');
+            //$('.sendIcon').removeClass('sendIcon').addClass('sapIcon');
             $('.wc-message-groups').removeClass('menuboxOff').addClass('menuboxOn');
         } else if ($(this).hasClass('menuIcon_active')) {   //MENU 닫기
             $('.wc-message-groups').removeClass('menuboxOn').addClass('menuboxOff');
             $('.menuIcon_active').removeClass('menuIcon_active').addClass('menuIcon');
-            $('.sendIcon').removeClass('sendIcon').addClass('sapIcon');
+            //$('.sendIcon').removeClass('sendIcon').addClass('sapIcon');
             $('.wc-console').animate({ 'bottom': 10 + 'px' }, 'fast');
             $('.menuBox').removeClass('on').addClass('off').css({ 'display': 'none' });
         } else if ($(this).hasClass('sapIcon-close')) {    //SAP 닫기
             $('.menuBox').removeClass('on').addClass('off').css({ 'display': 'none' });
             $('.sapIcon-close').removeClass('sapIcon-close').addClass('menuIcon');
             $('.wc-sap').removeClass('on').addClass('off').css({ 'display': 'none' });
-            $('.sapIcon-search').removeClass('sapIcon-search').addClass('sapIcon');
+            //$('.sapIcon-search').removeClass('sapIcon-search').addClass('sapIcon');
             $('.sapBtn').removeClass('on').addClass('off');
             $('.wc-textbox').animate({ 'left': 15 + 'px' }, 'fast');
         }
@@ -110,13 +110,13 @@ $(function () {
     //SAP 아니고 문자 입력시 SEND버튼
     $('.wc-shellinput').keyup(function () {
         $('.wc-send').tooltip('destroy'); //key입력시 tooptip삭제
-        if ($('.sapBtn').hasClass("off") && $(this).val() != '') {
-            $('.sapIcon').removeClass('sapIcon').addClass('sendIcon');
-            $('.wc-shellinput').css({ 'color': '#555' });
-        } else {
-            $('.sendIcon').removeClass('sendIcon').addClass('sapIcon');
-            $('.wc-shellinput').css({ 'color': '#326E9B' });
-        }
+        //if ($('.sapBtn').hasClass("off") && $(this).val() != '') {
+        //    $('.sapIcon').removeClass('sapIcon').addClass('sendIcon');
+        //    $('.wc-shellinput').css({ 'color': '#555' });
+        //} else {
+        //    $('.sendIcon').removeClass('sendIcon').addClass('sapIcon');
+        //    $('.wc-shellinput').css({ 'color': '#326E9B' });
+        //}
         $('.menuBox').removeClass('on').addClass('off').css({ 'display': 'none' });
         $('.menuIcon_active').removeClass('menuIcon_active').addClass('menuIcon');
         $('.wc-message-groups').scrollTop($('.wc-message-group-content')[0].scrollHeight);
@@ -144,7 +144,7 @@ $(function () {
             $('.wc-shellinput').attr('placeholder', '궁금한 것을 물어보세요!');
             $('.sapIcon-close').removeClass('sapIcon-close').addClass('menuIcon');
             $('.wc-sap').removeClass('on').addClass('off').css({ 'display': 'none' });
-            $('.sendIcon').removeClass('sendIcon').addClass('sapIcon');
+            //$('.sendIcon').removeClass('sendIcon').addClass('sapIcon');
             $('.sapBtn').removeClass('on').addClass('off');
             $('.wc-textbox').animate({ 'left': 15 + 'px' }, 'fast');
             $('.menuBox').removeClass('on').addClass('off').css({ 'display': 'none' });
