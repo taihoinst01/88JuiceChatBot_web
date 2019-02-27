@@ -18,7 +18,7 @@
     <script type="text/javascript" src="assets/js/bootstrap.js"></script>
     <script type="text/javascript" src="assets/js/start_pop.js"></script>
     <script type="text/javascript" src="assets/js/pc/ui.js"></script>
-    <title>CJ Employee</title>
+    <title>88Juice</title>
 </head>
 <body>
     <form name="frm" method="post" action="default.asp">

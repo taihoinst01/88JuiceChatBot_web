@@ -17,7 +17,7 @@
     <script type="text/javascript" src="assets/js/bootstrap.js"></script>
     <script type="text/javascript" src="assets/js/mobile/m_ui.js"></script>
     
-    <title>CJ Employee</title>
+    <title>88Juice</title>
 </head>
 <body>
     <input type="hidden" id="conversationId" />
