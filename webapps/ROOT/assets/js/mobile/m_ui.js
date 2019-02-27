@@ -82,7 +82,7 @@ $(function () {
     });
     //챗봇 MENU + SAP 버튼 동작
     $('.wc-menu > div').click(function () {
-        $('.wc-shellinput').attr('value', '').attr('placeholder', '궁금한 것을 물어보세요! (용어는 #에게)').val('');
+        $('.wc-shellinput').attr('value', '').attr('placeholder', '궁금한 것을 물어보세요!').val('');
         if ($(this).hasClass('menuIcon')) {     //MENU 열기
             $('.wc-menu').tooltip('destroy'); //메뉴 선택시 tooptip삭제
             $('.wc-console').animate({ 'bottom': 115 + 'px' }, 'fast');
@@ -102,7 +102,7 @@ $(function () {
             $('.wc-sap').removeClass('on').addClass('off').css({ 'display': 'none' });
             $('.sapIcon-search').removeClass('sapIcon-search').addClass('sapIcon');
             $('.sapBtn').removeClass('on').addClass('off');
-            $('.wc-textbox').animate({ 'left': 5 + 'px' }, 'fast');
+            $('.wc-textbox').animate({ 'left': 15 + 'px' }, 'fast');
         }
         $('.wc-message-groups').scrollTop($('.wc-message-group-content')[0].scrollHeight);
     });
@@ -146,7 +146,7 @@ $(function () {
             $('.wc-sap').removeClass('on').addClass('off').css({ 'display': 'none' });
             $('.sendIcon').removeClass('sendIcon').addClass('sapIcon');
             $('.sapBtn').removeClass('on').addClass('off');
-            $('.wc-textbox').animate({ 'left': 5 + 'px' }, 'fast');
+            $('.wc-textbox').animate({ 'left': 15 + 'px' }, 'fast');
             $('.menuBox').removeClass('on').addClass('off').css({ 'display': 'none' });
             $('input[type="text"].wc-shellinput').blur();
         } else if ($(this).hasClass('sapIcon-search') && v != '') { //SAP단어 설정해서 보내기

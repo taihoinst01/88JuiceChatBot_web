@@ -6,7 +6,7 @@
 .banner:hover{background:url(../../image/chatbotStyle/btn_chatlink_hover.png) no-repeat; width:170px;height:47px;position:relative;top:340px;left:23.5%;transform: translateX(-50%) translateY(-10%);cursor:pointer}*/
 
 /* chat TOP */
-.chatTitle{background: url("../../image/chatbotStyle/topbar_title.png") no-repeat;background-size:300px 50px; height:50px;width:300px; display: inline-block;}
+.chatTitle{background: url("../../image/chatbotStyle/88juice_title.png") no-repeat;background-size:300px 50px; height:50px;width:300px; display: inline-block;}
 .chatTitleText{font-size:13px;color:#FFF;}
 .topIcon01{background: url("../../image/chatbotStyle/btn_down.png") no-repeat;  width:14px;height:13px;display: inline-block;top: 14px; right: 58px;position: absolute} 
 .topIcon02{background: url("../../image/chatbotStyle/btn_fsize.png") no-repeat;  width:12px;height:12px;display: inline-block;top: 14px; right: 34px;position: absolute;}

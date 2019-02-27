@@ -7955,11 +7955,11 @@ var deviceChk;
                         o.createElement("div", {
                             className: "wc-sap off"
                         }),
-                        o.createElement("div", {
-                            className: "wc-menu"
-                        }, o.createElement("div", {
-                            className: "menuIcon"
-                        })),
+                        //o.createElement("div", {
+                        //    className: "wc-menu"
+                        //}, o.createElement("div", {
+                        //    className: "menuIcon"
+                        //})),
                         o.createElement("div", {
                             className: "wc-textbox"
                         },
@@ -8176,7 +8176,7 @@ var deviceChk;
                 messageFailed: "couldn't send",
                 messageSending: "sending",
                 timeSent: " at %1",
-                consolePlaceholder: "궁금한 것을 물어보세요! (용어는 #에게)",
+                consolePlaceholder: "궁금한 것을 물어보세요!",
                 listeningIndicator: "Listening..."
             },
             ja: {
